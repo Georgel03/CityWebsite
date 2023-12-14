@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principala</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel = "stylesheet" href="style.css">  
+      
+</head>
+<body>
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+
+    <a href="#" class="logo">OradeaBest</a>
+
+    <nav class="navbar">
+        <a href="index.html">Pagina Principala</a>
+        <a href="obiectiveturistice.html">Obiective Turistice</a>
+        <a href="cazare.html">Cazare</a>
+        <a href="evenimente.html">Evenimente</a>
+    </nav>
+
+</header>
+
+<section class="paginaprincipala" id="paginaprincipala">
+    <div class="content">
+        <h3>Viziteaza Orasul Oradea</h3>
+        <p>Descopera frumusetiile acestui oras minunat</p>
+        <a href="#istoriaorasului" class="btn">Vezi Istoria Orasului</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn" data-src="images/video1.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+<section class="istoriaorasului" id="istoriaorasului">
+    <h1 class="heading">
+        <span>i</span>
+        <span>s</span>
+        <span>t</span>
+        <span>o</span>
+        <span>r</span>
+        <span>i</span>
+        <span>a</span>
+        <span class="space"></span>
+        <span>o</span>
+        <span>r</span>
+        <span>a</span>
+        <span>s</span>
+        <span>u</span>
+        <span>l</span>
+        <span>u</span>
+        <span>i</span>
+    </h1>
+
+<div class="container">
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <h3>Cum s-a format Oradea?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo recusandae asperiores minima rem laudantium, quis, praesentium mollitia rerum, iure in ad est laboriosam itaque ipsam dicta nobis corporis! Odit, recusandae quam. Ipsum aperiam illo excepturi nostrum reprehenderit rem eaque unde! Cumque, eius nostrum minima eos nam magni possimus sequi eum, repellat ipsum nihil! Quibusdam quis labore eum nam minima in perspiciatis eos, cumque illum optio quaerat asperiores architecto rem atque, alias tempore exercitationem. Autem in ipsam dolorem, pariatur vero, nulla ipsa eos illum quod officia repellendus velit, rem tempora architecto.</p>
+            </div>
+            <div class="image">
+                <img src="images/image1.jpg" alt="oras">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>Mic Istoric</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum iste sit officia laborum vero quibusdam delectus? Nulla odit, similique numquam provident quidem sint asperiores. Architecto omnis esse vero ad recusandae ullam unde in sequi iure quo ea hic accusantium inventore amet dolorem voluptatem, distinctio et perspiciatis. Cumque, aut doloribus est unde, sed consequuntur nisi, maxime iusto dignissimos quia eaque neque odit porro voluptatum nulla officiis cum adipisci molestias ipsum magnam reiciendis nostrum. Architecto tempora minima, reiciendis corporis eligendi quos?</p>
+            </div>
+            <div class="image">
+                <img src="images/image2.jpg" alt="oras">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <h3>Asezare</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum iste sit officia laborum vero quibusdam delectus? Nulla odit, similique numquam provident quidem sint asperiores. Architecto omnis esse vero ad recusandae ullam unde in sequi iure quo ea hic accusantium inventore amet dolorem voluptatem, distinctio et perspiciatis. Cumque, aut doloribus est unde, sed consequuntur nisi, maxime iusto dignissimos quia eaque neque odit porro voluptatum nulla officiis cum adipisci molestias ipsum magnam reiciendis nostrum. Architecto tempora minima, reiciendis corporis eligendi quos?</p>
+            </div>
+            <div class="image">
+                <img src="images/image3.jpg" alt="oras">
+            </div>
+        </div>
+    </div>
+
+    <div id="prev" onclick="previous()"> </div>
+    <div id="next" onclick="next()"> </div>
+    
+</div>
+
+</section>
+    
+
+<script src="script.js"></script>
+</body>
+</html> 

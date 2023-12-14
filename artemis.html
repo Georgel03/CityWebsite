@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel = "stylesheet" href="secondstyle.css"> 
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <title>Artemis</title>
+</head>
+<body>
+
+    <section class="header">
+
+        <div class="flex">
+            <a href="#home" class="logo">Hotel Artemis</a>
+            <a href="#availability" class="btn">Vezi Valabilitate</a>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+
+        <div class="navbar">
+            <a href="cazare.html">Inapoi</a>
+            <a href="#home">Acasa</a>
+            <a href="#about">Despre</a>
+            <a href="#reservation">Rezervari</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#contact">Contact</a>
+            <a href="#reviews">Reviuri</a>
+
+        </div>
+    </section>
+
+    <section class="home" id="home">
+
+        <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="box swiper-slide">
+                    <img src="images/secondary-images/artemis.jpg" alt="">
+                    <div class="flex">
+                        <h3>Camere Luxoase</h3>
+                    <a href="#availability" class="btn">vezi valabilitate</a>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="images/secondary-images/artemis1.jpg" alt="">
+                   <div class="flex">
+                    <h3>Mancare si Bautura</h3>
+                    <a href="#reservation" class="btn">rezerva acuma</a>
+                   </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="images/secondary-images/artemis2.jpg" alt="">
+                    <div class="flex">
+                        <h3>Sala de Evenimente</h3>
+                        <a href="#contact" class="btn">contact</a>
+                    </div>
+                </div>
+
+                <div class="box swiper-slide">
+                    <img src="images/secondary-images/artemis3.jpg" alt="">
+                    <div class="flex">
+                        <h3>Personal Autentic</h3>
+                        <a href="#review" class="btn">Reviuri</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+    
+
+    <section class="availability" id="availability">
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>check in<span>*</span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>check out<span>*</span></p>
+                    <input type="date" name="check_out" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>adults<span>*</span></p>
+                    <select name = "adults" class="input">
+                        <option value="1">1 adults</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                        <option value="5">5 adults</option>
+                        <option value="6">6 adults</option>
+                    </select>
+                    
+                </div>
+
+                <div class="box">
+                    <p>kids<span>*</span></p>
+                    <select name = "kids" class="input">
+                        <option value="0">0 kids</option>
+                        <option value="1">1 kids</option>
+                        <option value="2">2 kids</option>
+                        <option value="3">3 kids</option>
+                        <option value="4">4 kids</option>
+                        <option value="5">5 kids</option>
+                        <option value="6">6 kids</option>
+                    </select>
+                    
+                </div>
+
+                <div class="box">
+                    <p>rooms<span>*</span></p>
+                    <select name = "rooms" class="input">
+                        <option value="1">1 rooms</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                        <option value="6">6 rooms</option>
+                    </select>
+                </div>
+
+            </div>
+            <input type="submit" value="check availability" class="btn" name="check">
+        </form>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img  src="images/secondary-images/personalhotel.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Personal Calificat</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aut laboriosam id cum officiis iure eum modi odio! Omnis, recusandae.</p>
+                <a href="#reservation" class="btn">Rezerva Acum</a>
+            </div>
+        </div>
+
+        <div class="row reverse">
+            <div class="image">
+                <img  src="images/secondary-images/cooking.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Chef Bucatar</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aut laboriosam id cum officiis iure eum modi odio! Omnis, recusandae.</p>
+                <a href="#contact" class="btn">Rezerva Acum</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image">
+                <img  src="images/secondary-images/spa.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Spa si masaj</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aut laboriosam id cum officiis iure eum modi odio! Omnis, recusandae.</p>
+                <a href="#gallery" class="btn">Rezerva Acum</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="reservation" id="reservation">
+        <form action="" method="post">
+            <h3>Rezerva Acum</h3>
+            <div class="flex">
+                <div class="box">
+                    <p>check in<span>*</span></p>
+                    <input type="date" name="check_in" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>check out<span>*</span></p>
+                    <input type="date" name="check_out" class="input" required>
+                </div>
+
+                <div class="box">
+                    <p>adults<span>*</span></p>
+                    <select name = "adults" class="input">
+                        <option value="1">1 adults</option>
+                        <option value="2">2 adults</option>
+                        <option value="3">3 adults</option>
+                        <option value="4">4 adults</option>
+                        <option value="5">5 adults</option>
+                        <option value="6">6 adults</option>
+                    </select>
+                    
+                </div>
+
+                <div class="box">
+                    <p>kids<span>*</span></p>
+                    <select name = "kids" class="input">
+                        <option value="0">0 kids</option>
+                        <option value="1">1 kids</option>
+                        <option value="2">2 kids</option>
+                        <option value="3">3 kids</option>
+                        <option value="4">4 kids</option>
+                        <option value="5">5 kids</option>
+                        <option value="6">6 kids</option>
+                    </select>
+                    
+                </div>
+
+                <div class="box">
+                    <p>rooms<span>*</span></p>
+                    <select name = "rooms" class="input">
+                        <option value="1">1 rooms</option>
+                        <option value="2">2 rooms</option>
+                        <option value="3">3 rooms</option>
+                        <option value="4">4 rooms</option>
+                        <option value="5">5 rooms</option>
+                        <option value="6">6 rooms</option>
+                    </select>
+                </div>
+
+            </div>
+            <input type="submit" value="check availability" class="btn" name="check">
+        </form>
+    </section>
+    
+
+    <section class="gallery" id="gallery">
+
+        <div class="swiper gallery-slider">
+            <div class="swiper-wrapper">
+                <img src="images/secondary-images/camera1.jpg" class="swiper-slide" alt="">
+                <img src="images/secondary-images/camera2.jpg" class="swiper-slide" alt="">
+                <img src="images/secondary-images/camera3.jpg" class="swiper-slide" alt="">
+                <img src="images/secondary-images/camera4.jpg" class="swiper-slide" alt="">
+                <img src="images/secondary-images/camera5.jpg" class="swiper-slide" alt="">
+                <img src="images/secondary-images/camera7.jpg" class="swiper-slide" alt="">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="row">
+
+            <form action="" method="post">
+                <h3>Posteaza un Mesaj</h3>
+                <input type="text" name="name"  required maxlength ="50" placeholder="enter your name" class="box">
+                <input type="email" name="email"  required maxlength ="50" placeholder="enter your email" class="box">
+                <input type="number" name="number"  required maxlength ="10" min="0" max="99999999999" placeholder="enter your number" class="box">
+                <textarea name="msg" class="box" required maxlength ="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" name="send" class="btn">
+            </form>
+
+            <div class="faq">
+                <h3 class="title">intrebari frecvente</h3>
+                <div class="box active">
+                    <h3>how to cancel?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati officia quisquam, et voluptate molestias.</p>
+
+                </div>
+
+                <div class="box active">
+                    <h3>is there any vacancy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati officia quisquam, et voluptate molestias.</p>
+                </div>
+
+                <div class="box active">
+                    <h3>what are payment methods?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati officia quisquam, et voluptate molestias.</p>
+
+                </div>
+
+                <div class="box active">
+                    <h3>how to claim coupons codes?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui obcaecati officia quisquam, et voluptate molestias.</p>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+
+                    <img src="images/pic1.png" alt="">
+                    <h3>Adelin Petrisor</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+
+                <div class="swiper-slide box">
+
+                    <img src="images/pic2.png" alt="">
+                    <h3>Mariana Floricica</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+
+                <div class="swiper-slide box">
+
+                    <img src="images/pic3.png" alt="">
+                    <h3>Andrei Popescu</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+
+                <div class="swiper-slide box">
+
+                    <img src="images/pic4.png" alt="">
+                    <h3>Carina Antonela</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+
+                <div class="swiper-slide box">
+
+                    <img src="images/pic5.png" alt="">
+                    <h3>Ionescu Cristi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+
+
+                <div class="swiper-slide box">
+
+                    <img src="images/pic6.png" alt="">
+                    <h3>Luca Stefan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, molestiae.</p>
+                </div>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    
+
+
+
+<script src="scripting.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

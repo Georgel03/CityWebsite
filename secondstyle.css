@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root{
+    --main-colour:#FDF7E4;
+    --sub-colour: #FAEED1;
+    --third-colour:#DED0B6;
+    --last-colour: #BBAB8C;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing:border-box;
+    text-transform: capitalize;
+    outline:none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--sub-colour);
+    color:var(--main-colour);
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--sub-colour);
+    border-radius: 5rem;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--main-colour);
+    
+}
+
+section {
+    padding:3rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: var(--sub-colour);
+}
+
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    border: var(--border);
+    font-size: 1.8rem;
+    color: floralwhite;
+    background-color: #B6C4B6;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    transition: .2s linear;
+    margin-top: 1rem;
+    background-color: var(--last-colour);
+}
+
+.btn:hover{
+    border-radius: 5rem;
+    background-color: var(--last-colour);
+    color: black;
+}
+
+.header{
+    padding-bottom: 2rem;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex .logo{
+    color:black;
+    font-size: 3rem;
+}
+
+.header .flex .btn{
+    margin-top: 0;
+}
+
+.header .flex .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    background-color: #B6C4B6;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+}
+
+.header .navbar a:hover{
+    background-color: blanchedalmond;
+}
+
+.home .box img{
+    border-radius: .5rem;
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .box .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.home .box .flex h3{
+    font-size: 2.5rem;
+    color:#163020;
+    text-transform: capitalize;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    padding: 3rem 2rem ;
+   
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    color: #F2F1EB;
+    font-size: 2rem;
+}
+
+.availability form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.availability form .flex .box p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.availability form .flex .box{
+    flex: 1 1 15rem;
+}
+.availability form .flex .box .input{
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    background-color: #B6C4B6;
+    border-bottom: #B6C4B6;
+    margin: 1rem 0;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 40rem;
+    height: 45rem;
+    border-radius: .5rem;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    
+}
+
+.about .row.reverse {
+    flex-flow: row-reverse;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.reservation .form{
+    border: wheat;
+    padding: 2rem;
+
+}
+
+.reservation form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+
+.reservation form h3{
+    background-color: #163020;
+    color: #EEE7DA;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.reservation form .flex .box{
+    flex: 1 1 40rem;
+    padding: 1rem 0;
+    margin: 1rem;
+    border-bottom: wheat;
+    background: #B6C4B6;
+    color: #F2F1EB;
+    font-size: 1.8rem;
+}
+
+.reservation form .flex .box .input{
+    padding: 1rem 0;
+    margin: 1rem;
+    border-bottom: wheat;
+    background: #B6C4B6;
+    color: #F2F1EB;
+    font-size: 1.8rem;
+}
+
+.gallery img{
+    height: 40rem;
+    width: 60rem;
+    border-radius: .5rem;
+    object-fit: cover;
+    margin-bottom: 4rem;
+}
+
+.swiper-pagination-bullet{
+    background-color: #BBAB8C;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #DED0B6;
+}
+
+.contact .row{
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.contact .row form{
+  flex: 1 1 40rem;
+  border: var(--last-colour);
+  border-radius: .5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact .row .faq{
+    flex: 1 1 40rem;
+
+}
+
+.contact .row form h3{
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    padding: 1.3rem;
+    color: rgb(19, 18, 18);
+    background-color: var(--main-colour);
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+.contact .row form .box{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    border-bottom: var(--last-colour);
+    font-size: 1.8rem;
+    color: #163020;
+    background: var(--third-colour);
+    width: 100%;
+}
+
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .faq .title{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contact .row .faq .box{
+    border-radius: .5rem;
+    border:var(--last-colour);
+    margin-top: 2rem;
+}
+
+.contact .row .faq .box h3{
+    background-color: #B6C4B6;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.contact .row .faq .box p{
+    padding: 1.5rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.contact .row .faq .box.active p{
+    display: inline-block;
+}
+
+.reviews{
+    padding-top: 0;
+}
+
+
+.reviews .box{
+    text-align: center;
+    user-select: none;
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.reviews .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.reviews .box h3{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: black;
+
+}
+
+.reviews .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: #163020;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header .flex .fa-bars{
+        display: inline-block;
+    }
+
+    .header .flex .btn{
+        display: none;
+    }
+
+    .header .navbar{
+        flex-flow: column;
+        padding: 2rem;
+        display: none;
+    }
+
+    .header .navbar.active {
+        display: flex;
+    }
+}
+
+ @media (max-width: 768px) {
+
+    .home .box img{
+        height: 40vh;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 35%
+    }
+} 
+
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .header .flex .logo{
+        font-size: 2rem;
+    }
+
+    .home .box img{
+        height: 25rem;
+    }
+
+    .about .row .image img{
+        width: 100%;
+    }
+}
