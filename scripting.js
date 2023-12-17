@@ -76,3 +76,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector('.contact form');
+
+    form.onsubmit = function () {
+        return validateForm();
+    };
+
+    function validateForm() {
+        
+        document.getElementById("nameError").textContent = "";
+        document.getElementById("emailError").textContent = "";
+        document.getElementById("numberError").textContent = "";
+        document.getElementById("msgError").textContent = "";
+
+      
+        var name = form.querySelector('input[name="name"]').value;
+        var email = form.querySelector('input[name="email"]').value;
+        var number = form.querySelector('input[name="number"]').value;
+        var msg = form.querySelector('textarea[name="msg"]').value;
+
+        if (name === "") {
+            document.getElementById("nameError").textContent = "Name is required";
+            return false;
+        }
+
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            document.getElementById("emailError").textContent = "Invalid email address";
+            return false;
+        }
+
+      
+        if (number === "" || isNaN(number) || number < 0 || number > 99999999999) {
+            document.getElementById("numberError").textContent = "Enter a valid number between 0 and 99999999999";
+            return false;
+        }
+
+       
+        if (msg === "") {
+            document.getElementById("msgError").textContent = "Message is required";
+            return false;
+        }
+
+       
+        return true;
+    }
+});
+
+

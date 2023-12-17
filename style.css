@@ -38,7 +38,7 @@ section{
 .heading span{
     font-size: 3.5rem;
     background: rgba(255, 165, 0, .2);
-    color:#c04095;
+    color:#323232;
     border-radius: .5rem;
     padding: .2rem 1rem;
     display:inline-block;
@@ -100,6 +100,9 @@ header .navbar a:hover{
     color: pink;
 }
 
+header .navbar a .active{
+    color: pink;
+}
 /* body{
     height: 200rem;
 
@@ -154,7 +157,7 @@ header .navbar a:hover{
     object-fit: cover;
 }
 
-.istoriaorasului .container {
+  .container {
   position: relative;
 }
 
@@ -282,7 +285,7 @@ section.tourism {
 }
 
 .tourism .heading span .space {
-    display: none; /* Hide the space span */
+    display:none; 
 }
 
 .tourism .box-container{

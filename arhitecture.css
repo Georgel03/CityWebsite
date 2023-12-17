@@ -51,7 +51,7 @@ header .logo{
 
 
 header .navbar a{
-    color:#fff;
+    color:#eee;
     font-size: 2rem;
     margin:0 .8rem;
 }
@@ -77,8 +77,9 @@ header .navbar a:hover{
     min-height: 100vh;
     width: 100%;
     font-size: 16px;
-    background: #eee;
-    color: #777;
+    margin-top: 10rem;
+    background: #fff;
+    color: #222;
     display: flex;
     justify-content: center;
     align-items: center;

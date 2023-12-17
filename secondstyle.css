@@ -237,7 +237,7 @@ section {
 }
 
 .reservation form h3{
-    background-color: #163020;
+    background-color: #BBAB8C;
     color: #EEE7DA;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -253,7 +253,7 @@ section {
     margin: 1rem;
     border-bottom: wheat;
     background: #B6C4B6;
-    color: #F2F1EB;
+    color: black;
     font-size: 1.8rem;
 }
 
@@ -262,7 +262,7 @@ section {
     margin: 1rem;
     border-bottom: wheat;
     background: #B6C4B6;
-    color: #F2F1EB;
+    color: black;
     font-size: 1.8rem;
 }
 
@@ -393,13 +393,9 @@ section {
    
 }
 
-
-
-
-
-
-
-
+.error {
+    color: red;
+}
 
 
 
